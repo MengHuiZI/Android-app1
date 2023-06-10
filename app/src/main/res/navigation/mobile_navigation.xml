@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myapplication.ui.home.HomeFragment"
+        android:label="首页"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_volunteerGroups"
+        android:name="com.example.myapplication.ui.dashboard.DashboardFragment"
+        android:label="志愿团体"
+        tools:layout="@layout/fragment_volunteergroups" />
+
+    <fragment
+        android:id="@+id/navigation_volunteerProjects"
+        android:name="com.example.myapplication.ui.notifications.NotificationsFragment"
+        android:label="志愿项目"
+        tools:layout="@layout/fragment_volunteerprojects" />
+
+    <fragment
+        android:id="@+id/navigation_myMessage"
+        android:name="com.example.myapplication.ui.mymessage.MyMessageFragment"
+        tools:layout="@layout/fragment_my_message"
+        android:label="信息"/>
+</navigation>

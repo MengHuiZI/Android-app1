@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- 权限声明 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/volunteer"
+        android:label="梦回志愿服务"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".GroupMessage.GroupAddProject"
+            android:exported="false"
+            android:label="添加项目"
+            android:theme="@style/Theme.MyApplication.NoActionBar"/>
+        <activity
+            android:name=".volunteerMessage.UpdateVolunteerPassword"
+            android:exported="false" />
+        <activity
+            android:name=".volunteerMessage.UpdateVolunteerMessage"
+            android:exported="false" />
+        <activity
+            android:name=".volunteerMessage.VolunteerProject"
+            android:exported="false"
+            android:label="@string/title_activity_volunteer_project"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".ProjectInfo"
+            android:exported="false" />
+        <activity
+            android:name=".GroupMessage.GroupUpdatePassword"
+            android:exported="false" />
+        <activity
+            android:name=".GroupMessage.GroupUpdateMessage"
+            android:exported="false" />
+        <activity
+            android:name=".GroupMessage.GroupTime"
+            android:exported="false"
+            android:label="团体时长"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".GroupMessage.GroupVolunteer"
+            android:exported="false" />
+        <activity
+            android:name=".GroupMessage.GroupProject"
+            android:exported="false"
+            android:label="团体项目"
+            android:theme="@style/Theme.MyApplication.NoActionBar"/>
+        <activity
+            android:name=".volunteerMessage.VolunteerGroup"
+            android:exported="false"
+            android:label="志愿团体"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".volunteerMessage.VolunteerTime"
+            android:exported="false"
+            android:label="服务时长"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".GroupInfo"
+            android:exported="false" />
+        <activity
+            android:name=".GroupRegister"
+            android:exported="false" />
+        <activity
+            android:name=".VolunteerRegister"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="梦回志愿服务">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
