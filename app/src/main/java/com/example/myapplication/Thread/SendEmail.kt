@@ -28,10 +28,10 @@ class SendEmail(val title:String,val content:String,val toEmail:String) :Thread(
         msg.setText(builder.toString())
         //发出邮箱
         //发出邮箱
-        msg.setFrom(InternetAddress("3094446052@qq.com"))
+        msg.setFrom(InternetAddress(""))
 
         val transport: Transport = session.getTransport()
-        transport.connect("smtp.qq.com", "3094446052@qq.com", "kpvhiuvoomswddff")
+        transport.connect("smtp.qq.com", "", "")
         //internetaddress单个发送直接写邮箱，群发写多个邮箱，中间用逗号（英文）隔开
         //发送的信息和目标邮箱
         transport.sendMessage(msg, InternetAddress.parse(toEmail))
